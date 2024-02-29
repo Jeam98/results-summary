@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  --Lightred: hsl(0, 100%, 67%);
+  --Lightreda: hsl(0, 100%, 67%, 0.1);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Orangeyyellowa: hsl(39, 100%, 56%, 0.1);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Greenteala: hsl(166, 100%, 37%, 0.1);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  --Cobaltbluea: hsl(234, 85%, 45%, 0.1);
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+.container {
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+.card {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  min-height: 100vh;
+}
+.result {
+  display: grid;
+  gap: 1em;
+  font-size: 18px;
+  text-align: center;
+  padding: 2em;
+  border-radius: 0em 0em 2em 2em;
+  background: linear-gradient(
+    0deg,
+    hsl(241, 81%, 54%) 0%,
+    hsl(252, 100%, 67%) 100%
+  );
+}
+.puntuation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  padding: 1em;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    hsla(241, 72%, 46%, 0) 0%,
+    hsla(256, 72%, 46%, 1) 100%
+  );
+}
+.summary {
+  display: grid;
+  gap: 1.5em;
+  padding: 2rem;
+}
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--Lightred);
+  background-color: var(--Lightreda);
+}
+.memory {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--Orangeyyellow);
+  background-color: var(--Orangeyyellowa);
+}
+.verbal {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--Greenteal);
+  background-color: var(--Greenteala);
+}
+.visual {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--Cobaltblue);
+  background-color: var(--Cobaltbluea);
+}
+h1 {
+  color: var(--Lightlavender);
+  font-size: 20px;
+  font-weight: 700;
+}
+h2 {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 27px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Darkgrayblue);
+}
+button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--White);
+  padding: 1em;
+  border-radius: 2em;
+  border: none;
+  background-color: var(--Darkgrayblue);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+button:hover {
+  transform: scale(105%);
+}
+figure {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.summary p {
+  font-size: 18px;
+  font-weight: 700;
+}
+.result p {
+  color: var(--Lightlavender);
+  padding: 0.5em;
+}
+.puntuation span {
+  color: var(--White);
+  font-weight: 800;
+  font-size: 60px;
+}
+.summary span {
+  color: var(--Darkgrayblue);
+}
+.summary .pg {
+  color: var(--Lightlavender);
+}
+@media (min-width: 600px) {
+  .container {
+    min-height: 100vh;
+  }
+  .card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    min-height: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+  }
+  .result {
+    border-radius: 1.5rem;
+  }
+}
